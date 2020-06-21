@@ -13,11 +13,5 @@ pipeline {
       }
     }
 
-    stage('crone') {
-      steps {
-        build(job: 'jenkinspipeline', quietPeriod: 10, wait: true)
-      }
-    }
-
   }
 }
